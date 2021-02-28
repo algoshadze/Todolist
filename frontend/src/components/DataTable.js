@@ -1,6 +1,6 @@
 import * as React from "react";
 import { DataGrid } from "@material-ui/data-grid";
-
+import ReactDataGrid from 'react-data-grid'
 const columns = [
   {
     field: "id",
@@ -12,6 +12,7 @@ const columns = [
     headerName: "User Name",
     width: 200,
     sortable: true,
+    
   },
   {
     field: "email",
@@ -20,16 +21,18 @@ const columns = [
     sortable: true,
   },
   {
+    key:'task',
     field: "text",
     headerName: "Text",
     type: "text",
     width: 900,
+    editable: true,
   },
   {
     field: "status",
     headerName: "Status",
     type: "number",
-    width: 50,
+    width: 100,
   },
 ];
 
