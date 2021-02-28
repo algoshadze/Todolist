@@ -33,6 +33,9 @@
   flex-direction: row;
   text-align: center;
 }
+.button{
+  font-size: 200;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
